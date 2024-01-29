@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../public/logo.png";
-import govLogo from "../../public/govLogo.png";
+import logo from "/logo.png";
+import govLogo from "/govLogo.png";
 
 export default function Header() {
   return (
