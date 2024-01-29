@@ -6,8 +6,12 @@ import './Style/navbar.css'
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function BasicExample() {
+  const navFont = {
+    fontFamily: 'montserratsemibold',
+    fontSize: '1.25rem'
+  };
   return (
-    <Navbar expand="lg" className="">
+    <Navbar expand="lg" style={navFont}>
       <Container >
         <Navbar.Brand active href="#home" className='d-lg-none'>
         <span className='me-2'>
@@ -18,8 +22,8 @@ function BasicExample() {
             alt="Logo"
           />
         </span>
-        <span className='d-none d-sm-inline-block'>South East Central Railway</span>
-        <span className='d-inline-block d-sm-none'>SECR</span>
+        <span className='d-none d-sm-inline-block' style={{textShadow: '2px 2px 4px rgba(180, 180, 200, 0.75)',color:"#2f4676"}}>South East Central Railway</span>
+        <span className='d-inline-block d-sm-none' style={{textShadow: '2px 2px 4px rgba(180, 180, 200, 0.75)',color:"#2f4676"}}>SECR</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
